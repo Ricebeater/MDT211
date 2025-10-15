@@ -1345,6 +1345,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: HJD_FP_door00
       objectReference: {fileID: 0}
+    - target: {fileID: 8208411731178698345, guid: 50215adbee6ce2b449b0f2fc29a5e5fe, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208411731178698345, guid: 50215adbee6ce2b449b0f2fc29a5e5fe, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081643053965096683, guid: 50215adbee6ce2b449b0f2fc29a5e5fe, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081643053965096683, guid: 50215adbee6ce2b449b0f2fc29a5e5fe, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081643053965096683, guid: 50215adbee6ce2b449b0f2fc29a5e5fe, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6983869072611311343, guid: 50215adbee6ce2b449b0f2fc29a5e5fe, type: 3}
     m_RemovedGameObjects: []
@@ -1393,6 +1413,7 @@ MonoBehaviour:
   _name: Door
   interactionTextUI: {fileID: 726949856}
   CanUse: 1
+  isOpen: 0
   openOffset: {x: 2, y: 0, z: 0}
   slideSpeed: 2
   door: {fileID: 726949855}
@@ -1940,6 +1961,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2454909528473943368, guid: 8db164f48fcdae64180ebf0ce2bb5d92, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5791420369477035222, guid: 8db164f48fcdae64180ebf0ce2bb5d92, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -2292,6 +2317,10 @@ PrefabInstance:
     - target: {fileID: 2253393103804301607, guid: e360d8d16d87ca544b56a603ea831f2f, type: 3}
       propertyPath: m_Name
       value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118616605803565968, guid: e360d8d16d87ca544b56a603ea831f2f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2748,7 +2777,7 @@ MonoBehaviour:
   interactionTextUI: {fileID: 425545790}
   CanUse: 1
   isOn: 0
-  InteracTo: {fileID: 726949857}
+  InteractTo: {fileID: 700596151}
 --- !u!1 &1767451337
 GameObject:
   m_ObjectHideFlags: 0
