@@ -1,7 +1,8 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Character : Identity
+public class Character : Identity, Idestoryable
 {
     int _health;
     public int health {
@@ -17,6 +18,8 @@ public class Character : Identity
     protected Animator animator;
     protected Rigidbody rb;
     Quaternion newRotation;
+
+    public event Action<Idestoryable> OnDestory;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void SetUP()
